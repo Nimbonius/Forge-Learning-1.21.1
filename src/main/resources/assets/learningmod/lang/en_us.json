@@ -1,5 +1,8 @@
 {
   "item.learningmod.mushroom_squishmallow": "Mushroom Squishmallow",
   "item.learningmod.base_squishmallow": "Squishmallow",
-  "block.learningmod.compressed_squishmallow": "Compressed Squishmallow"
+
+  "block.learningmod.compressed_squishmallow": "Compressed Squishmallow",
+
+  "creativetab.learningmod.squishmallow_items": "Squishmallows"
 }
