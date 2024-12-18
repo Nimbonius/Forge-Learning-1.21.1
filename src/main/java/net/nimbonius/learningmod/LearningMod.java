@@ -1,7 +1,6 @@
 package net.nimbonius.learningmod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.nimbonius.learningmod.block.ModBlocks;
 import net.nimbonius.learningmod.items.ModItems;
 import org.slf4j.Logger;
 
@@ -35,6 +35,7 @@ public class LearningMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,7 +53,9 @@ public class LearningMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.SQUISHMALLOW);
+            event.accept(ModItems.MUSHROOM_SQUISHMALLOW);
+            event.accept(ModItems.BASE_SQUISHMALLOW);
+            event.accept(ModBlocks.COMPRESSED_SQUISHMALLOW);
         }
     }
 
