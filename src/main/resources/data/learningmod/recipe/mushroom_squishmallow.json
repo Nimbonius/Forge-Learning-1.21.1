@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:red_mushroom"
+    },
+    "F": {
+      "item": "learningmod:base_squishmallow"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WFW",
+    "WWW"
+  ],
+  "result" : {
+    "count": 1,
+    "id": "learningmod:mushroom_squishmallow"
+  }
+}

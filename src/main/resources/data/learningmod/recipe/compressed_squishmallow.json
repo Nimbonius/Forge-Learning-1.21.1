@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "learningmod:squishmallow_items"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result" : {
+    "count": 1,
+    "id": "learningmod:compressed_squishmallow"
+  }
+}
