@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nimbonius.learningmod.block.ModBlocks;
+import net.nimbonius.learningmod.items.ModCreativeModeTabs;
 import net.nimbonius.learningmod.items.ModItems;
 import org.slf4j.Logger;
 
@@ -34,8 +35,12 @@ public class LearningMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,11 +57,7 @@ public class LearningMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.MUSHROOM_SQUISHMALLOW);
-            event.accept(ModItems.BASE_SQUISHMALLOW);
-            event.accept(ModBlocks.COMPRESSED_SQUISHMALLOW);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
