@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
+    "W": {
       "tag": "learningmod:squishmallow_items"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "WWW",
+    "WWW",
+    "WWW"
   ],
-  "result" : {
-    "count": 1,
-    "id": "learningmod:compressed_squishmallow"
+  "result": {
+    "id": "learningmod:compressed_squishmallow",
+    "count": 1
   }
 }

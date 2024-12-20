@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "learningmod:item/squishmallow"
+    "layer0": "learningmod:item/base_squishmallow"
   }
 }

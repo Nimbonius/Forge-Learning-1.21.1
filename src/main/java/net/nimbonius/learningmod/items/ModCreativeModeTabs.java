@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BASE_SQUISHMALLOW.get());
                         output.accept(ModItems.MUSHROOM_SQUISHMALLOW.get());
                         output.accept(ModBlocks.COMPRESSED_SQUISHMALLOW.get());
+                        output.accept(ModBlocks.SQUISHMALLOW_HEART_ORE.get());
+                        output.accept(ModBlocks.SQUISHMALLOW_HEART_DEEPSLATE_ORE.get());
 
                     }).build());
 

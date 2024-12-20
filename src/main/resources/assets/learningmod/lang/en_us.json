@@ -3,6 +3,8 @@
   "item.learningmod.base_squishmallow": "Squishmallow",
 
   "block.learningmod.compressed_squishmallow": "Compressed Squishmallow",
+  "block.learningmod.squishmallow_heart_ore": "Squishmallow Heart Ore",
+  "block.learningmod.squishmallow_heart_deepslate_ore": "Squishmallow Heart Deepslate Ore",
 
   "creativetab.learningmod.squishmallow_items": "Squishmallows"
 }

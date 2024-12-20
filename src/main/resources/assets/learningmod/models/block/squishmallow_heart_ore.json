@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "learningmod:block/squishmallow_heart_ore"
+  }
+}
